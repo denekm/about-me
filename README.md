@@ -12,4 +12,4 @@ This site is built to introduce the user learn more about me.
 
 ### Reflections and Comments
 
-* This project was a great practice to build on my knowlege on ***HTML***, ***CSS** and ***Java Script***
+* This project was a great practice to build on my knowlege on ***HTML***, ***CSS*** and ***Java Script***
