@@ -2,7 +2,7 @@
 
 ## About Me
 
-This site is built to introduce the user learn more about me.
+This site is built to introduce the user learn more about me by taking a quiz.
 
 ### Author: Marta Deneke
 

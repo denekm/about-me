@@ -72,7 +72,7 @@ if (myHobby === 'yes'|| myHobby === 'y') {
   alert('Correct! I do enjoy cooking');
 }
 else if (myHobby === 'no'|| myHobby === 'n') {
-  //console.log('Wrong! I do like to cook');
+//console.log('Wrong! I do like to cook');
   alert('Wrong! I do like to cook');
 }
 else {
@@ -82,3 +82,19 @@ else {
 
 let welcomeMessage = prompt('What is your name?');
 alert('Welcome to my page ' + welcomeMessage);
+
+
+let input = prompt('How many siblings do I have?');
+let attempts = 3;
+let correctAnswer = 3;
+
+for(let i = 0; i< attempts; i++){
+  if(input === correctAnswer){
+    alert('You are correct! I have 3 siblings');
+    break;
+  }else if(input < 3){
+    input= prompt('Too low! Try a higher number');
+  } else if(input > 3){
+    input= prompt('Too high! Try a lower number');
+  }
+}

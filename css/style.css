@@ -9,3 +9,15 @@ h1 {
   list-style: disc;
   padding-left: 0 rem;
 }
+
+section1 {
+  text-indent: 50px;
+}
+
+section2{
+  text-indent: 50px;
+}
+
+section3{
+  text-indent: 50px;
+}
