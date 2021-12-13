@@ -89,12 +89,11 @@ let attempts = 3;
 let correctAnswer = 3;
 
 for(let i = 0; i< attempts; i++){
-  if(input === correctAnswer){
-    alert('You are correct! I have 3 siblings');
-    break;
-  }else if(input < 3){
+  if(input < 3){
     input= prompt('Too low! Try a higher number');
   } else if(input > 3){
     input= prompt('Too high! Try a lower number');
-  }
+  }else(input === correctAnswer);
+  alert('You are correct! I have 3 siblings');
+  break;
 }
