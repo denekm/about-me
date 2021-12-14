@@ -1,4 +1,6 @@
 'use strict';
+let userScore = '0';
+
 
 
 let myOrigin= prompt('I am from the United States?').toLowerCase();
@@ -8,6 +10,7 @@ if (myOrigin === 'yes'|| myOrigin === 'y') {
   alert('Wrong! I am not from the US, I came from Ethiopia at the age of 11');
 }
 else if (myOrigin === 'no'|| myOrigin === 'n') {
+  userScore++;
   //console.log('Correct! I am not from the US, I came from Ethiopia at the age of 11');
   alert('Correct! I am not from the US, I came from Ethiopia at the age of 11');
 }
@@ -19,7 +22,8 @@ else {
 
 let favoriteNumber= prompt('Is my favorite number seven? Yes or No?').toLowerCase();
 
-if (favoriteNumber === 'yes'|| favoriteNumber === 'y') {
+if (favoriteNumber === 'yes'|| favoriteNumber === 'y'){
+  userScore++;
   //console.log('Correct! My favorite number is 7');
   alert('Correct! My favorite number is 7');
 }
@@ -39,7 +43,8 @@ if (myAge === 'yes'|| myAge === 'y') {
   //console.log('Wrong! I am 25 years old');
   alert('Wrong! I am 25 years old');
 }
-else if (myAge === 'no'|| myAge === 'n') {
+else if (myAge === 'no'|| myAge === 'n'){
+  userScore++;
   //console.log('Correct! I am not 24 years old, I am 25');
   alert('Correct! I am not 24 years old, I am 25');
 }
@@ -56,6 +61,7 @@ if (favoriteFood === 'yes'|| favoriteFood === 'y') {
   alert('Wrong! My favorite food is not pasta, it is tacos');
 }
 else if (favoriteFood === 'no'|| favoriteFood === 'n') {
+  userScore++;
   //console.log('Correct! My favorite food is not pasta, it is tacos');
   alert('Correct! My favorite food is not pasta, it is tacos');
 }
@@ -68,6 +74,7 @@ else {
 let myHobby = prompt('Do I like to cook?').toLowerCase();
 
 if (myHobby === 'yes'|| myHobby === 'y') {
+  userScore++;
   //console.log('Correct! I do enjoy cooking');
   alert('Correct! I do enjoy cooking');
 }
@@ -86,14 +93,40 @@ alert('Welcome to my page ' + welcomeMessage);
 
 let input = prompt('How many siblings do I have?');
 let attempts = 3;
-let correctAnswer = 3;
+let answer = 3;
 
 for(let i = 0; i< attempts; i++){
-  if(input < 3){
+  if(parseInt(input)=== answer){
+    userScore++;
+    alert('You are correct! I have 3 siblings');
+    break;
+  }else if(input < 3){
     input= prompt('Too low! Try a higher number');
   } else if(input > 3){
     input= prompt('Too high! Try a lower number');
-  }else(input === correctAnswer);
-  alert('You are correct! I have 3 siblings');
-  break;
+  }
 }
+
+
+let states= ['washington','california','florida'];
+let correctAnswer = false;
+let attemptsRemaining = 6;
+
+while(attemptsRemaining && !correctAnswer){
+  let guess = prompt('Which states have I been to?').toLowerCase();
+  console.log(guess);
+  attemptsRemaining--;
+  console.log(attemptsRemaining);
+  for(let i = 0; i<states.length; i++){
+    console.log(states[i]);
+    if(guess === states[i]){
+      userScore++;
+      alert('Correct! I have been to ' + states[i]);
+      correctAnswer= true;
+    }
+  }
+  if (attemptsRemaining === 0){
+    alert('Nice try but the states I have been to are ' + states);
+  }
+}
+alert('Your final score is ' + userScore +' out of 7 points! Thank you for playing');
