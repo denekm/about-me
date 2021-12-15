@@ -60,22 +60,24 @@ function myAge () {
 }
 myAge();
 
-let favoriteFood= prompt('Is my favorite food pasta Yes or No?').toLowerCase();
+function favoriteFood (){
+  let favoriteFood= prompt('Is my favorite food pasta Yes or No?').toLowerCase();
 
-if (favoriteFood === 'yes'|| favoriteFood === 'y') {
+  if (favoriteFood === 'yes'|| favoriteFood === 'y') {
   //console.log('Wrong! My favorite food is not pasta, it is tacos');
-  alert('Wrong! My favorite food is not pasta, it is tacos');
-}
-else if (favoriteFood === 'no'|| favoriteFood === 'n') {
-  userScore++;
-  //console.log('Correct! My favorite food is not pasta, it is tacos');
-  alert('Correct! My favorite food is not pasta, it is tacos');
-}
-else {
+    alert('Wrong! My favorite food is not pasta, it is tacos');
+  }
+  else if (favoriteFood === 'no'|| favoriteFood === 'n') {
+    userScore++;
+    //console.log('Correct! My favorite food is not pasta, it is tacos');
+    alert('Correct! My favorite food is not pasta, it is tacos');
+  }
+  else {
   //console.log('Invalid answer,please answer with a Yes or No');
-  alert('Invalid answer,please answer with a Yes or No');
+    alert('Invalid answer,please answer with a Yes or No');
+  }
 }
-
+favoriteFood();
 
 let myHobby = prompt('Do I like to cook?').toLowerCase();
 
