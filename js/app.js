@@ -2,22 +2,24 @@
 let userScore = '0';
 
 
+function myOrigin (){
+  let origin= prompt('I am from the United States?').toLowerCase();
 
-let myOrigin= prompt('I am from the United States?').toLowerCase();
-
-if (myOrigin === 'yes'|| myOrigin === 'y') {
-  //console.log('Wrong! I am not from the US, I came from Ethiopia at the age of 11');
-  alert('Wrong! I am not from the US, I came from Ethiopia at the age of 11');
+  if (origin === 'yes'|| origin === 'y') {
+    //console.log('Wrong! I am not from the US, I came from Ethiopia at the age of 11');
+    alert('Wrong! I am not from the US, I came from Ethiopia at the age of 11');
+  }
+  else if (origin === 'no'|| origin === 'n') {
+    userScore++;
+    //console.log('Correct! I am not from the US, I came from Ethiopia at the age of 11');
+    alert('Correct! I am not from the US, I came from Ethiopia at the age of 11');
+  }
+  else {
+    //console.log('Invalid answer,please answer with a Yes or No');
+    alert('Invalid answer,please answer with a Yes or No');
+  }
 }
-else if (myOrigin === 'no'|| myOrigin === 'n') {
-  userScore++;
-  //console.log('Correct! I am not from the US, I came from Ethiopia at the age of 11');
-  alert('Correct! I am not from the US, I came from Ethiopia at the age of 11');
-}
-else {
-  //console.log('Invalid answer,please answer with a Yes or No');
-  alert('Invalid answer,please answer with a Yes or No');
-}
+myOrigin ();
 
 
 let favoriteNumber= prompt('Is my favorite number seven? Yes or No?').toLowerCase();
