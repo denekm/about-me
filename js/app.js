@@ -3,13 +3,13 @@ let userScore = '0';
 
 
 function myOrigin (){
-  let origin= prompt('I am from the United States?').toLowerCase();
+  let myOrigin= prompt('I am from the United States?').toLowerCase();
 
-  if (origin === 'yes'|| origin === 'y') {
+  if (myOrigin === 'yes'|| myOrigin === 'y') {
     //console.log('Wrong! I am not from the US, I came from Ethiopia at the age of 11');
     alert('Wrong! I am not from the US, I came from Ethiopia at the age of 11');
   }
-  else if (origin === 'no'|| origin === 'n') {
+  else if (myOrigin === 'no'|| myOrigin === 'n') {
     userScore++;
     //console.log('Correct! I am not from the US, I came from Ethiopia at the age of 11');
     alert('Correct! I am not from the US, I came from Ethiopia at the age of 11');
@@ -21,40 +21,44 @@ function myOrigin (){
 }
 myOrigin ();
 
+function favoriteNumber (){
 
-let favoriteNumber= prompt('Is my favorite number seven? Yes or No?').toLowerCase();
+  let favoriteNumber= prompt('Is my favorite number seven? Yes or No?').toLowerCase();
 
-if (favoriteNumber === 'yes'|| favoriteNumber === 'y'){
+  if (favoriteNumber === 'yes'|| favoriteNumber === 'y'){
   userScore++;
   //console.log('Correct! My favorite number is 7');
   alert('Correct! My favorite number is 7');
-}
-else if (favoriteNumber === 'no'|| favoriteNumber === 'n') {
+  }
+  else if (favoriteNumber === 'no'|| favoriteNumber === 'n') {
   //console.log('Wrong! My favorite number is 7');
-  alert('Wrong! My favorite number is 7');
-}
-else {
+    alert('Wrong! My favorite number is 7');
+  }
+  else {
   //console.log('Invalid answer,please answer with a Yes or No');
-  alert('Invalid answer,please answer with a Yes or No');
+    alert('Invalid answer,please answer with a Yes or No');
+  }
 }
+favoriteNumber ();
 
+//function myAge () {
+  let myAge= prompt('Am I 24? Yes or No?').toLowerCase();
 
-let myAge= prompt('Am I 24? Yes or No?').toLowerCase();
-
-if (myAge === 'yes'|| myAge === 'y') {
+  if (myAge === 'yes'|| myAge === 'y') {
   //console.log('Wrong! I am 25 years old');
-  alert('Wrong! I am 25 years old');
-}
-else if (myAge === 'no'|| myAge === 'n'){
-  userScore++;
-  //console.log('Correct! I am not 24 years old, I am 25');
-  alert('Correct! I am not 24 years old, I am 25');
-}
-else {
+    alert('Wrong! I am 25 years old');
+  }
+  else if (myAge === 'no'|| myAge === 'n'){
+    userScore++;
+    //console.log('Correct! I am not 24 years old, I am 25');
+    alert('Correct! I am not 24 years old, I am 25');
+  }
+  else {
   //console.log('Invalid answer,please answer with a Yes or No');
-  alert('Invalid answer,please answer with a Yes or No');
+    alert('Invalid answer,please answer with a Yes or No');
+  }
 }
-
+//myAge();
 
 let favoriteFood= prompt('Is my favorite food pasta Yes or No?').toLowerCase();
 
