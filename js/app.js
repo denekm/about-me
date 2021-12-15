@@ -41,7 +41,7 @@ function favoriteNumber (){
 }
 favoriteNumber ();
 
-//function myAge () {
+function myAge () {
   let myAge= prompt('Am I 24? Yes or No?').toLowerCase();
 
   if (myAge === 'yes'|| myAge === 'y') {
@@ -58,7 +58,7 @@ favoriteNumber ();
     alert('Invalid answer,please answer with a Yes or No');
   }
 }
-//myAge();
+myAge();
 
 let favoriteFood= prompt('Is my favorite food pasta Yes or No?').toLowerCase();
 
