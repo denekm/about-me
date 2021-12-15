@@ -79,21 +79,24 @@ function favoriteFood (){
 }
 favoriteFood();
 
-let myHobby = prompt('Do I like to cook?').toLowerCase();
+function myHobby (){
+  let myHobby = prompt('Do I like to cook?').toLowerCase();
 
-if (myHobby === 'yes'|| myHobby === 'y') {
-  userScore++;
-  //console.log('Correct! I do enjoy cooking');
-  alert('Correct! I do enjoy cooking');
-}
-else if (myHobby === 'no'|| myHobby === 'n') {
+  if (myHobby === 'yes'|| myHobby === 'y') {
+    userScore++;
+    //console.log('Correct! I do enjoy cooking');
+    alert('Correct! I do enjoy cooking');
+  }
+  else if (myHobby === 'no'|| myHobby === 'n') {
 //console.log('Wrong! I do like to cook');
   alert('Wrong! I do like to cook');
-}
-else {
+  }
+  else {
   //console.log('Invalid answer,please answer with a Yes or No');
-  alert('Invalid answer,please answer with a Yes or No');
+    alert('Invalid answer,please answer with a Yes or No');
+  }
 }
+myHobby ();
 
 let welcomeMessage = prompt('What is your name?');
 alert('Welcome to my page ' + welcomeMessage);
