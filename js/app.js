@@ -98,8 +98,11 @@ function myHobby (){
 }
 myHobby ();
 
-let welcomeMessage = prompt('What is your name?');
-alert('Welcome to my page ' + welcomeMessage);
+function welcomeMessage(){
+  let welcomeMessage = prompt('What is your name?');
+  alert('Welcome to my page ' + welcomeMessage);
+}
+welcomeMessage();
 
 
 let input = prompt('How many siblings do I have?');
