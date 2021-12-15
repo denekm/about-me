@@ -26,9 +26,9 @@ function favoriteNumber (){
   let favoriteNumber= prompt('Is my favorite number seven? Yes or No?').toLowerCase();
 
   if (favoriteNumber === 'yes'|| favoriteNumber === 'y'){
-  userScore++;
-  //console.log('Correct! My favorite number is 7');
-  alert('Correct! My favorite number is 7');
+    userScore++;
+    //console.log('Correct! My favorite number is 7');
+    alert('Correct! My favorite number is 7');
   }
   else if (favoriteNumber === 'no'|| favoriteNumber === 'n') {
   //console.log('Wrong! My favorite number is 7');
@@ -123,25 +123,29 @@ function siblings(){
 }
 siblings();
 
-let states= ['washington','california','florida'];
-let correctAnswer = false;
-let attemptsRemaining = 6;
+function states () {
+  let states= ['washington','california','florida'];
+  let correctAnswer = false;
+  let attemptsRemaining = 6;
 
-while(attemptsRemaining && !correctAnswer){
-  let guess = prompt('Which states have I been to?').toLowerCase();
-  console.log(guess);
-  attemptsRemaining--;
-  console.log(attemptsRemaining);
-  for(let i = 0; i<states.length; i++){
-    console.log(states[i]);
-    if(guess === states[i]){
-      userScore++;
-      alert('Correct! I have been to ' + states[i]);
-      correctAnswer= true;
+  while(attemptsRemaining && !correctAnswer){
+    let guess = prompt('Which states have I been to?').toLowerCase();
+    console.log(guess);
+    attemptsRemaining--;
+    console.log(attemptsRemaining);
+    for(let i = 0; i<states.length; i++){
+      console.log(states[i]);
+      if(guess === states[i]){
+        userScore++;
+        alert('Correct! I have been to ' + states[i]);
+        correctAnswer= true;
+      }
+    }
+    if (attemptsRemaining === 0){
+      alert('Nice try but the states I have been to are ' + states);
     }
   }
-  if (attemptsRemaining === 0){
-    alert('Nice try but the states I have been to are ' + states);
-  }
+  alert('Your final score is ' + userScore +' out of 7 points! Thank you for playing');
 }
+states ();
 alert('Your final score is ' + userScore +' out of 7 points! Thank you for playing');
