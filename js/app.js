@@ -104,23 +104,24 @@ function welcomeMessage(){
 }
 welcomeMessage();
 
+function siblings(){
+  let input = prompt('How many siblings do I have?');
+  let attempts = 3;
+  let answer = 3;
 
-let input = prompt('How many siblings do I have?');
-let attempts = 3;
-let answer = 3;
-
-for(let i = 0; i< attempts; i++){
-  if(parseInt(input)=== answer){
-    userScore++;
-    alert('You are correct! I have 3 siblings');
-    break;
-  }else if(input < 3){
-    input= prompt('Too low! Try a higher number');
-  } else if(input > 3){
-    input= prompt('Too high! Try a lower number');
+  for(let i = 0; i< attempts; i++){
+    if(parseInt(input)=== answer){
+      userScore++;
+      alert('You are correct! I have 3 siblings');
+      break;
+    }else if(input < 3){
+      input= prompt('Too low! Try a higher number');
+    } else if(input > 3){
+      input= prompt('Too high! Try a lower number');
+    }
   }
 }
-
+siblings();
 
 let states= ['washington','california','florida'];
 let correctAnswer = false;
