@@ -5,21 +5,26 @@ body {
 h1 {
   font-size: 3rem;
   color: rgb(133, 121, 240);
-  margin-left: 1rem;
+  margin-left: 5rem;
   list-style: disc;
   padding-left: 0 rem;
+  text-decoration: underline;
 }
 
+p {
+ font-size: large;
+}
 section1 {
-  border: 2px solid black;
   text-indent: 50px;
+  margin-left: 3;
 }
-
+ol{
+  list-style: disc
+}
 section2{
   text-indent: 50px;
 }
 
 section3{
   text-indent: 50px;
-  margin-left
 }

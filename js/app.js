@@ -88,8 +88,8 @@ function myHobby (){
     alert('Correct! I do enjoy cooking');
   }
   else if (myHobby === 'no'|| myHobby === 'n') {
-//console.log('Wrong! I do like to cook');
-  alert('Wrong! I do like to cook');
+  //console.log('Wrong! I do like to cook');
+    alert('Wrong! I do like to cook');
   }
   else {
   //console.log('Invalid answer,please answer with a Yes or No');
